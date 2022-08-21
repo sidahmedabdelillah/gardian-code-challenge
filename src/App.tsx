@@ -6,7 +6,7 @@ import Slot from "./components/Slot";
 export type ColorsType = "black" | "white" | "green" | "yellow";
 
 const PLAYER_INITIAL_SCORE = 10;
-const MACHINE_INITIAL_SCORE = 0;
+const MACHINE_INITIAL_SCORE = 20;
 const COST_OF_PLAY = 1;
 const COLORS = ["black", "white", "green", "yellow"];
 
@@ -48,7 +48,7 @@ function App() {
       }
       setPlayerScore((p) => p - COST_OF_PLAY);
     }
-    
+
     // the chalenge was not clear if we should add a point if played with free play 
     // so i assumed yes to keep the game flowing 
     setMachineScore((m) => m + COST_OF_PLAY);
